@@ -1,13 +1,12 @@
 /*start design for login page*/
 *{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-family: monospace;
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
     background: white;
     display: flex;
     align-items: center;
@@ -30,10 +29,11 @@ body{
     text-align: center;
     margin-bottom: 20px;
     color: #333;
+    font-size: 2rem;
 }
 .subtitle {
     text-align: center;
-    font-size: 14px;
+    font-size: 1rem;
     color: #777;
     margin-bottom: 20px;
 }
@@ -46,6 +46,7 @@ body{
     margin-bottom: 5px;
     color: #444;
     font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .input-group input {
@@ -71,7 +72,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-top: 10px;
     transition: 0.3s ease;
@@ -79,11 +80,67 @@ button {
 button:hover {
     background-color: #242423;
 }
-/*
+
 .error-message {
     color: red;
     text-align: center;
     margin-top: 10px;
-    display: none; /* Hidden by default 
-}*/
+    display: none; /* Hidden by default */
+}
 /*end design for login page*/
+/*start design header*/
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    /*display: block;*/
+    /*flex-direction: column;*/
+    position: absolute;
+    background-color: #2f2f33;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    /*z-index: 100;*/
+    padding: 0 40px;
+}
+.nav{
+    display: flex;
+    align-items: center;   /* centers items vertically */
+    justify-content: center; /* optional: centers items horizontally inside the nav */
+    padding-left: 450px;
+    /*height: 100%; */
+}
+.nav a{
+    text-decoration: none;
+    color: #dcdcdc;
+    margin-left: 25px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+    padding-top: 10px;
+    transition: 0.3s ease;
+}
+.nav a:hover{
+    color: #333;
+    background-color: #4286f4;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.logout-btn{
+    width: 150px;
+    padding: 8px 18px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logout-btn:hover {
+    background-color: #d40000;
+}
+/*end design header*/

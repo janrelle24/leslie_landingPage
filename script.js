@@ -1,7 +1,11 @@
-/*
+/**Code for login btn */
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
     const errorMessage = document.getElementById('errorMessage');
+
+    // e Store email og password
+    const storedEmail = 'horohorolesliemae@gmail.com';
+    const storedPassword = 'password123';
 
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
@@ -9,15 +13,26 @@ document.addEventListener('DOMContentLoaded', function() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        // Basic validation (replace with actual authentication logic)
-        if (username === 'user' && password === 'password') {
+        // Validate against stored email and password
+        if (username === storedEmail && password === storedPassword) {
             errorMessage.style.display = 'none';
-            alert('Login successful!'); // Or redirect to another page
-            // window.location.href = 'dashboard.html';
+            alert('Login successful!');
+            // Redirect sa index.html after successful login
+            window.location.href = 'index.html';
         } else {
+            document.getElementById("password").value = ""; //clear password field
             errorMessage.textContent = 'Invalid username or password.';
             errorMessage.style.display = 'block';
+
+            // Hide error after 3 seconds
+            setTimeout(() => {
+                errorMessage.style.display = 'none';
+            }, 3000);
         }
     });
 });
-*/
+
+/*Code for logout btn */
+document.getElementById("logoutBtn").addEventListener("click", function () {
+    window.location.href = "loginPage.html";   
+});
