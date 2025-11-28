@@ -219,38 +219,51 @@ button:hover {
 /*start about section*/
 .about{
     width: 100%;
-    padding: 150px 50px;
-    
+    padding: 80px 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .about-container {
     max-width: 1500px;
     width: 100%;
-    height: 500px;
+    /*height: 1000px;*/
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     gap: 50px;
     border-radius: 10px;
     background: #f7f7f7;
     animation: fadeIn 1.2s ease-in-out forwards;
     opacity: 0;
+    flex-direction: column;
+}
+.about-row {
+    width: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: flex-start;
+    gap: 50px;
+    border-left: 3px solid #ffce00;
+    border-top: 3px solid #ffce00;
+    border-right: 3px solid #ffce00;
 }
 
 /* LEFT COLUMN - INFO */
 .about-info {
-    flex: 1;
-    padding-left: 50px;
+    /*flex: 1;*/
+    width: 50%;
+    padding: 20px;
+    
 }
 
 .about-info h2 {
+    padding-top: 10px;
     font-size: 3rem;
     margin-bottom: 20px;
     color: #4685eb;
     font-weight: 700;
+    padding-left: 100px;
 }
 
 .about-info p {
@@ -276,11 +289,13 @@ button:hover {
 
 /* RIGHT COLUMN - IMAGE + ICONS */
 .my-img {
-    flex: 1;
+    padding-top: 20px;
+    width: 40%;
     text-align: center;
 }
 
 .my-img img {
+    
     width: 280px;
     height: 280px;
     border-radius: 50%;
@@ -289,6 +304,10 @@ button:hover {
     border: 6px solid #4685eb;
     box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
     margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+.my-img img:hover{
+    transform: scale(1.1);
 }
 
 /* Social Icons */
@@ -305,8 +324,57 @@ button:hover {
     transform: translateY(-5px);
 }
 
-.my-location {
-    flex: 1;
-}
 
 /*end about section*/
+/* START my-location design */
+
+.my-location {
+    clear: both;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.map-wrapper {
+    width: 100%;
+    max-width: 900px;
+    /*background: #ffffff;*/
+    background: #ebe9e8;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+    border: 2px solid #e6e6e6;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    opacity: 0;
+}
+
+.map-wrapper .box h3 {
+    font-size: 2rem;
+    color: #4685eb;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.map-wrapper .box p {
+    font-size: 1.2rem;
+    color: #333;
+    
+    margin-bottom: 15px;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.15);
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+.map-wrapper iframe:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+/* END my-location design */
