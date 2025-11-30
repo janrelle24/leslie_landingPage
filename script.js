@@ -36,3 +36,43 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById("logoutBtn").addEventListener("click", function () {
     window.location.href = "loginPage.html";   
 });
+/* code for email sending */
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const formStatus = document.getElementById('formStatus');
+
+    // Basic validation
+    if (name === "" || email === "" || message === "") {
+        formStatus.textContent = "Please fill in all fields.";
+        formStatus.style.color = "red";
+        return;
+
+        // Hide after 5 seconds
+        setTimeout(() => {
+            formStatus.style.display = "none";
+        }, 5000);
+
+        return;
+    }
+        
+    // Simulate sending data (in a real application, you'd use fetch() or XMLHttpRequest)
+    console.log("Form submitted:");
+    console.log(`Name: ${name}`);
+    console.log(`Email: ${email}`);
+    console.log(`Message: ${message}`);
+
+    formStatus.textContent = "Message sent successfully!";
+    formStatus.style.color = "green";
+
+    // Clear form fields
+    document.getElementById('contactForm').reset();
+
+    // Hide after 5 seconds
+    setTimeout(() => {
+        formStatus.style.display = "none";
+    }, 5000);
+});
