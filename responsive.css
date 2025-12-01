@@ -1,0 +1,194 @@
+/* Hide hamburger on large screens */
+@media (min-width: 1025px) {
+    .hamburger {
+        display: none;
+    }
+    .nav {
+        position: static;
+        background: none;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .logout-btn {
+        display: block;
+    }
+
+    .overlay {
+        display: none !important;
+    }
+}
+/* 1024px - Medium Screens (Laptop Small / iPad Landscape) */
+
+@media (max-width: 1024px) {
+    /*login responsive*/
+    .wrapper {
+        padding-top: 250px;
+    }
+
+    .login-container {
+        width: 500px;
+        padding: 25px;
+    }
+
+    .login-container h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+    /*header responsive*/
+    /* HEADER */
+    .header {
+        height: 100px;
+        width: 20%;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 2000;
+        border-radius: 60%;
+        /*background: linear-gradient(135deg, #1a1a1a, #333);*/
+        background: none;
+    }
+
+    /* MOBILE NAV MENU */
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -250px;      /* Hidden by default */
+        width: 250px;
+        height: 100vh;
+        padding-top: 150px;
+        padding-left: 25px;
+        background-color: #1a1a1a;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1500;
+        justify-content: flex-start;
+    }
+
+    .nav.active {
+        right: 0;
+    }
+
+    .nav a {
+        font-size: 1.6rem;
+        color: white;
+    }
+
+    /* FIXED LOGOUT BUTTON */
+    .logout-btn {
+        margin-top: 20px;
+        font-size: 1.3rem;
+        padding: 8px 15px;
+        width: 80%;
+        background: #ed0524;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    /* HAMBURGER BUTTON */
+    .hamburger {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        padding: 10px;
+        font-size: 26px;
+        color: black;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 3000;
+    }
+
+    /* DARK OVERLAY */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.5);
+        z-index: 1000;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+    /* start intro section responsive*/
+    
+    /* end intro section responsive*/
+
+}
+/*  768px - Tablets */
+@media (max-width: 768px) {
+    /*login responsive*/
+    .wrapper {
+        padding-top: 250px;
+    }
+
+    .login-container {
+        width: 320px;
+        padding: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 1.7rem;
+    }
+
+    .input-group label {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    /*header responsive*/
+    
+}
+/* 480px - Mobile Phones */
+@media (max-width: 480px) {
+    /*login responsive*/
+    .wrapper {
+        padding-top: 100px;
+    }
+
+    .login-container {
+        width: 90%;
+        padding: 18px;
+        border-radius: 6px;
+    }
+
+    .login-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .input-group input {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 9px;
+    }
+    
+}

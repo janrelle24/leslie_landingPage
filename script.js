@@ -122,3 +122,32 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+// ELEMENTS
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const navMenu = document.getElementById("navMenu");
+const overlay = document.getElementById("overlay");
+
+// OPEN MENU
+hamburgerBtn.addEventListener("click", () => {
+    navMenu.classList.add("active");
+    overlay.classList.add("active");
+});
+
+// CLOSE WHEN CLICKING OVERLAY
+overlay.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+
+// CLOSE WHEN CLICKING ANY NAV LINK
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        overlay.classList.remove("active");
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', loadLayout);
