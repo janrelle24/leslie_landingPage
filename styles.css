@@ -260,7 +260,7 @@ button:hover {
     margin-bottom: 20px;
     color: #4685eb;
     font-weight: 700;
-    padding-left: 100px;
+    text-align: center;
 }
 
 .about-info p {

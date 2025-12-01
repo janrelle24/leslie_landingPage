@@ -63,8 +63,8 @@
     .nav {
         position: fixed;
         top: 0;
-        right: -250px;      /* Hidden by default */
-        width: 250px;
+        right: -300px;      /* Hidden by default */
+        width: 300px;
         height: 100vh;
         padding-top: 150px;
         padding-left: 25px;
@@ -236,7 +236,7 @@
 
     .contact-container {
         flex-direction: column; /* stack form and info vertically */
-        gap: 50px;
+        gap: 60px;
         padding: 30px;
         width: 80%;
     }
@@ -327,7 +327,219 @@
         padding: 10px;
     }
     /*header responsive*/
-    
+    .header {
+        height: 80px;
+        width: 20%;
+        padding: 0 15px;
+        border-radius: 0;
+        justify-content: flex-start;
+        background: none;
+    }
+    /* HAMBURGER */
+    .hamburger {
+        top: 20px;
+        right: 20px;
+        font-size: 28px;
+        padding: 8px;
+    }
+    /* MOBILE NAV */
+    .nav {
+        right: -260px;
+        width: 260px;
+        padding-top: 120px;
+        padding-left: 20px;
+        gap: 22px;
+    }
+    .nav a {
+        font-size: 1.4rem;
+    }
+
+    .logout-btn {
+        font-size: 1.2rem;
+        padding: 10px;
+        width: 85%;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+     /* INTRO SECTION */
+    .intro {
+        padding-top: 150px;
+        height: auto;
+        padding: 150px 20px 80px;
+        text-align: center;
+    }
+
+    .greeting {
+        font-size: 2.5rem;
+    }
+
+    .name {
+        font-size: 1.6rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+     /* ABOUT SECTION */
+    .about {
+        padding: 40px 25px;
+    }
+
+    .about-container {
+        max-width: 100%;
+    }
+
+    .about-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-info {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .about-info h2 {
+        font-size: 2.3rem;
+        padding-top: 20px;
+        margin-bottom: 12px;
+    }
+
+    .about-info p {
+        font-size: 1rem;
+    }
+
+    .my-img img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .my-img i {
+        font-size: 2rem;
+    }
+
+    .map-wrapper {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .map-wrapper .box h3 {
+        font-size: 1.6rem;
+    }
+
+    .map-wrapper iframe {
+        width: 100%;
+        height: 300px;
+    }
+    /* PROJECT SECTION */
+    .projects-section {
+        padding: 50px 25px;
+    }
+
+    .projects-title h2 {
+        font-size: 2.2rem;
+    }
+
+    .projects-title p {
+        font-size: 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        justify-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .project-card img {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 0.95rem;
+    }
+
+    .project-icons i {
+        font-size: 1.7rem;
+    }
+    /* CONTACT SECTION */
+    .contact-section {
+        padding: 50px 30px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+
+    .contact-form label {
+        font-size: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .info-box .label {
+        font-size: 1rem;
+    }
+
+    .info-box p {
+        font-size: 0.95rem;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .footer p {
+        font-size: 0.95rem;
+    }
+
+    .footer-socials a {
+        font-size: 1.4rem;
+        margin: 0 6px;
+    }
+
 }
 /* 480px - Mobile Phones */
 @media (max-width: 480px) {
@@ -359,5 +571,185 @@
         font-size: 1rem;
         padding: 9px;
     }
-    
+    /* HEADER */
+    .header {
+        height: 70px;
+        width: 20%;
+        padding: 0 12px;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        top: 18px;
+        right: 15px;
+        font-size: 25px;
+        padding: 6px;
+    }
+
+    .nav {
+        width: 220px;
+        right: -220px;
+        padding-top: 100px;
+        padding-left: 18px;
+        gap: 18px;
+    }
+
+    .nav a {
+        font-size: 1.2rem;
+    }
+
+    .logout-btn {
+        font-size: 1.05rem;
+        padding: 10px;
+        width: 90%;
+    }
+    /* INTRO SECTION */
+    .intro {
+        padding: 120px 15px 60px;
+        text-align: center;
+    }
+
+    .greeting {
+        font-size: 2rem;
+    }
+
+    .name {
+        font-size: 1.4rem;
+    }
+
+    .description {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    /* ABOUT SECTION */
+    .about {
+        padding: 30px 20px;
+    }
+
+    .about-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .about-info{
+        text-align: center;
+    }
+    .about-info h2 {
+        font-size: 1.9rem;
+        padding-top: 10px;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-info p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .my-img img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .my-img i {
+        font-size: 1.8rem;
+    }
+
+    .map-wrapper iframe {
+        width: 100%;
+        height: 240px;
+    }
+
+    .map-wrapper .box h3 {
+        font-size: 1.4rem;
+    }
+    /* PROJECT SECTION */
+    .projects-section {
+        padding: 40px 20px;
+    }
+
+    .projects-title h2 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .projects-title p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .project-card {
+        max-width: 100%;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    .project-info h3 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .project-info p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .project-icons i {
+        font-size: 1.5rem;
+    }
+    /* CONTACT SECTION */
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 10px;
+        gap: 30px;
+    }
+
+    .contact-form h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .info-box .label {
+        font-size: 0.9rem;
+    }
+
+    .info-box p {
+        font-size: 0.85rem;
+    }
+    /* FOOTER */
+    .footer {
+        padding: 18px 10px;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
+    }
+
+    .footer-socials a {
+        font-size: 1.2rem;
+        margin: 0 5px;
+    }
 }
