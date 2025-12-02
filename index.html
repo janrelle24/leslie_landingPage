@@ -14,13 +14,13 @@
         <button class="hamburger" id="hamburger-btn">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <div class="nav" id="navMenu">
+        <nav class="nav" id="navMenu">
             <a href="#home" class="nav-link">HOME</a>
             <a href="#about-me" class="nav-link">ABOUT ME</a>
             <a href="#projects" class="nav-link">PROJECTS</a>
             <a href="#contact" class="nav-link">CONTACT</a>
             <button class="logout-btn" id="logoutBtn">LOGOUT</button>
-        </div>
+        </nav>
         <div class="overlay" id="overlay"></div>
         
     </header>
@@ -40,7 +40,7 @@
         <section id="about-me" class="about">
             <div class="about-container">
                 <div class="about-row">
-                    <div class="about-info">
+                    <article class="about-info">
                         <h2>About Me</h2>
                         <p>
                             I'm Leslie Mae Horohoro, an 18-year-old first-year BSIT (Bachelor of Science in Information Technology) college student. 
@@ -48,8 +48,8 @@
                             Some of my skills are cooking and dancing. 
                             My interest in life is being an entrepreneur.
                         </p>
-                    </div>
-                    <div class="my-img">
+                    </article>
+                    <aside class="my-img">
                         <img src="image/leslie.jpg" alt="my_photo">
                         <p class="follow-text">follow me on:</p>
                         
@@ -58,10 +58,10 @@
                         <i class="fa-brands fa-instagram"></i>
                         
                         <!--<div class="social-icons"></div>-->
-                    </div>
+                    </aside>
                 </div>
                 
-                <div class="my-location">
+                <section class="my-location">
                     <div class="map-wrapper">
                         <div class="box">
                             <h3>My Location</h3>
@@ -72,16 +72,16 @@
                             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                </div>
+                </section>
             </div>
         </section>
         <section id="projects" class="projects-section">
-            <div class="projects-title">
+            <header class="projects-title">
                 <h2>My Projects</h2>
                 <p>Here are some of the projects I have created — each representing my skills, creativity, and passion in programming.</p>
-            </div>
+            </header>
             <div class="project-grid">
-                <div class="project-card">
+                <article class="project-card">
                     <div class="project-info">
                         <img src="image/pythonProject.png" alt="python_project">
                         <h3>Who wants to be a Billionaire(python)</h3>
@@ -93,8 +93,8 @@
                             <i class="fa-brands fa-python"></i>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
+                </article>
+                <article class="project-card">
                     <div class="project-info">
                         <img src="image/javaProject.png" alt="java_project">
                         <h3>Who wants to be a Billionaire(java)</h3>
@@ -106,8 +106,8 @@
                             <i class="fa-brands fa-java"></i>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
+                </article>
+                <article class="project-card">
                     <div class="project-info">
                         <img src="image/myPortfolio.png" alt="my_portfolio">
                         <h3>My Portfolio</h3>
@@ -118,11 +118,11 @@
                         </p>
                         <div class="project-icons">
                             <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-square-js"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-square-js"></i>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
         <section id="contact" class="contact-section">
@@ -143,7 +143,7 @@
                     <button type="submit">Send Message</button>
                     <div id="formStatus"></div>
                 </form>
-                <div class="contact-info">
+                <aside class="contact-info">
                     <h3>Contact Information</h3>
 
                     <div class="info-box">
@@ -165,7 +165,7 @@
                         <p class="label">TIKTOK</p>
                         <p>Lesyang</p>
                     </div>
-                </div>
+                </aside>
             </div>
         </section>
     </main>
